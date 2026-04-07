@@ -38,9 +38,9 @@ def agent_node(state: AgentState):
     # Logging
     if response.tool_calls:
         for tc in response.tool_calls:
-            print(f"🔹 Gọi tool: {tc['name']}({tc['args']})")
+            print(f"Gọi tool: {tc['name']}({tc['args']})")
     else:
-        print("📝 Trả lời trực tiếp")
+        print("Trả lời trực tiếp")
         
     return {"messages": [response]}
 
